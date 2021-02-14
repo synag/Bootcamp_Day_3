@@ -1,0 +1,29 @@
+body {
+   margin: 5%;
+
+}
+.box-set {
+    position: relative;
+    height: 400px;
+    background: rgb(245, 240, 240);
+    height: 150px;
+
+}
+
+
+  .box-1 {
+    bottom: 0;
+    right: -10;
+    position: absolute;
+    background-color: grey;
+    height: 50px;
+    padding-top: 20px;
+  }
+  
+  .box-2 {
+    left: -30px;
+    top: 0;
+    position: fixed;
+    background-color: blanchedalmond;
+    height: 30px;
+  }

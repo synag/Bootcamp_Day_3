@@ -1,0 +1,100 @@
+/* 
+"*" is a common technique called a CSS reset (wildcard * all elements); he * means "all elements" (a universal selector), so we are setting all elements to have zero margins, and zero padding, thus making them look the same in all browsers. */
+/* 
+Border-Box - Defines how the width and height of an element are calculated: should they include padding and borders, or not */
+/* Without border box true with or height with will include both padding and border making it appear bigger. */
+* {
+    box-sizing: border-box;
+  }
+
+  /* Body selector sets the initial font-size, line-height, and color of all elements text  this technique reduces the amount of CSS code to write  */
+
+  body {
+    font-size: 24px;
+    line-height: 32px;
+    color: #333;
+  } 
+
+  /* The Fixed class CSS uses fixed position property that fixes the an element with positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.  */
+  /* Background color shows the are of the div element */
+  /* Text-align- center aligns the text in center of the div element.  */
+  /* Increase in Padding expands the overall size - width and height */
+ /* Margin is 0 to prevent white space */
+  
+.fixed{
+    position: fixed;
+    top:0;
+    left:0;
+    background-color:  #eee;
+    /* height: 150px;
+    width: 200px; */
+    text-align: center;
+    padding: 40px;
+    margin:0;
+
+
+}
+
+/* Wrapper class for div helps with formating of the child elements.  */
+/* The CSS margin properties are used to create space around elements, outside of any defined borders */
+/* Set the margin property to auto to horizontally center the element within its container. */
+/* The CSS padding properties are used to generate space around an element's content, inside of any defined borders. Padding created space around the inherted elements, this improved the spacing */
+
+.wrapper{
+
+margin: 0 auto;
+width: 600px; 
+padding: 20px;
+}
+
+/* The H1 class provides more specificy the H1 styling to overide the inherited styling. Font-size for h1 is 37px, line height or spacing is 45px and the margin provids the whitespace between h1 element and paragraph.  */
+
+.h1{
+font-size: 36px;
+line-height: 45px;
+margin-bottom: 20px;
+
+}
+
+/* More specifity is needed to style the paragraph so that the font-size, line-height, and margin-bottom inherited by partent elements.  */
+ /* The font-size property sets the size of the text. The fot size for the text for all p element is 18px and the height is 28px. Margin bottom 20px create the white space for element below.  */
+
+p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  /* The Relative css class format the box div. The relative position property is An element with position: relative; is positioned relative to its normal position. There the div position normal witin the wrapper div width*/
+/* Background color displays the element area (element, and padding). */
+/* Height of div element is 200px and text  align align the text in the center.  */
+/* Padding expands the element div block size and margin bottom to create white space between div and P element. */
+
+.relative{
+position: relative;
+background-color:#eee;
+height: 200px;
+text-align: center;
+padding: 20px;
+margin-bottom: 20px;
+
+}
+
+
+
+/* The div element with position: absolute; is positioned relative to the nearest positioned ancestor which is the parent div(instead of positioned relative to the viewport, like fixed). if no position ancestor, then it will use the body element and move with page scroling */
+
+/* Background color chagne the div color. Bottom position the box element at the bottom of the ancester div box and the right -20 make the div extend past the boundaries of the ancester div. Height sets the height of the element.  */
+
+
+.absolute{
+position: absolute;
+background-color:#999;
+bottom: 0;
+right: -20px;
+width: 250px;
+height: 120px;
+
+
+
+}
